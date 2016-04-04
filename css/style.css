@@ -1,0 +1,393 @@
+@import url(https://fonts.googleapis.com/css?family=Exo|Architects+Daughter|Satisfy|Philosopher|Cookie|Playball|Great+Vibes|Pinyon+Script|Alex+Brush|Allura|Six+Caps|Parisienne|Forum|Petit+Formal+Script|Wire+One|Herr+Von+Muellerhoff|Qwigley|Aladin|Stalemate|Euphoria+Script|Rouge+Script|Lancelot|Monsieur+La+Doulaise);
+
+html,
+body { 
+	height: 100%; 
+}
+
+/*== html, body ==*/
+html {
+    height: 100%;
+}
+
+body {
+    background: rgb(192, 197, 206);
+    position: relative;
+    height: 100%;
+    display: table;
+    width: 100%;
+}
+
+.page-row {
+  display: table-row;
+  height: 1px;
+}
+
+.page-row-expanded { 
+	height: 100%; 
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+
+/*== home ==*/
+#home {
+    background-image: url("https://res.cloudinary.com/dnkyfvpgn/image/upload/v1456959015/solar-eclipse-459078_1920_dqvw0g.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 15%;
+}
+
+#circle {
+    margin: 15% auto;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(170,80,50);
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+}
+
+.fa-angle-double-down {
+   font-size: 2em;
+}
+
+/*== typography home section ==*/
+.title {
+    text-align: center; 
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Wire One', sans-serif;
+}
+
+h1 span {
+   font-family: 'Wire One', sans-serif; 
+}
+#monogram{
+    font-size: 3em;
+    color: rgb(192, 197, 206);
+}
+
+h3 {
+   font-family: 'Forum', cursive;
+   color: rgb(192, 197, 206); 
+}
+
+
+/*== Navbar ==*/
+nav {
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    height: 70px;
+    background: rgb(65, 76, 76);
+    
+    opacity: 0.3;
+    font-family: 'Forum', cursive !important;
+}
+
+.nav-full-color {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1;
+}
+nav ul {
+    padding: 20px;
+    list-style: none; 
+}
+
+nav ul li {
+    display: inline-block;
+    font-family: 'Forum' !important;
+    box-sizing: border-box;
+}
+
+nav ul li a {
+  padding: 10px 0;
+  color: rgb(238,238,238);
+  
+  font-size: 1em;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s ease;
+
+}
+
+nav ul li a:hover {
+  font-size: 1.1em;  
+  color: rgb(0,0,0);
+  text-decoration: none;
+}
+
+nav ul li a:focus {
+   text-decoration: none !important;
+   color: rgb(238,238,238);
+}
+
+a.active {
+  text-decoration: none;
+  -webkit-color: rgb(238,238,238);
+  -moz-color: rgb(238,238,238);
+  -o-color: rgb(238,238,238);
+  color: rgb(238,238,238);
+  
+  -webkit-border-bottom: 5px solid rgb(170,80,50);
+  -moz-border-bottom: 5px solid rgb(170,80,50);
+  -o-border-bottom: 5px solid rgb(170,80,50);
+  border-bottom: 5px solid rgb(170,80,50);   
+}
+
+/*===section's separator===*/
+
+.separator-container {
+    text-align: center;
+    position: relative;
+}
+
+.separator-container .separator {
+    margin: 0 auto 1em;
+    width: 20em;
+}
+
+.separator-container .separator.line-separator:before, .separator-container .separator.line-separator:after {
+    display: block;
+    width: 40%;
+    content: " ";
+    margin-top: 14px;
+    border: 1px solid rgb(238,238,238);
+}
+
+.separator-container .separator.line-separator:before {
+    float: left;
+}
+
+.separator-container .separator.line-separator:after {
+    float: right;
+}
+
+.glyphicon {
+    color: rgb(238,238,238);  
+}
+
+/*== seactions ==*/
+.sectionTitle {
+   text-align: center;
+   font-family: 'Forum', cursive;
+   padding-top: 60px;
+   color: rgb(65, 76, 76);
+}
+
+/*=== about ===*/
+
+p {
+   font-size: 1.2em;
+   font-family: 'Forum', cursive;
+   color: rgb(65, 76, 76);
+}
+
+.p-upper {
+   text-align: center;
+   font-size: 2em;
+   font-family: 'Forum', cursive; 
+}
+
+#about {
+    height: 100%;
+}
+
+#skills {
+    padding: 20px 0px 20px 0px;
+}
+.skill {
+    font-size: 5em;
+    color: rgb(65, 76, 76);
+
+}
+
+.icon-margin {
+    margin-top: 15px;
+}
+
+
+/*=== my work ===*/
+
+#myWork {
+    height: 100%;
+}
+
+/*=== projects ===*/
+
+figure.project {
+  font-family: 'Forum', cursive;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  max-width: 100%;
+  max-height: 250px;
+  color: rgb(238, 238, 238);
+  text-align: center;
+  background-color: rgb(65, 76, 76);
+  font-size: 16px;
+}
+
+figure.project * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+figure.project img {
+  width: 100%;
+  height: 250px;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  backface-visibility: hidden;
+}
+
+figure.project figcaption {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  -webkit-transform: scale(0.5) translate(0%, -50%);
+  transform: scale(0.5) translate(0%, -50%);
+  -webkit-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  z-index: 1;
+  opacity: 0;
+  padding: 0 30px;
+}
+
+figure.project h4,
+figure.project p {
+  line-height: 1.5em;
+}
+
+figure.project h4 {
+  font-family: 'Forum', cursive;
+  margin: 0;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+figure.project p {
+  font-size: 0.8em;
+  font-weight: 500;
+  color: rgb(238, 238, 238);
+  margin: 0 0 15px;
+}
+figure.project .open-page {
+  border: 2px solid rgb(238, 238, 238);
+  padding: 0.5em 1em;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+  display: inline-block;
+}
+figure.project .open-page:hover {
+  background-color: rgb(238, 238, 238);
+  color: rgb(0, 0, 0);
+}
+figure.project:hover img,
+figure.project.hover img {
+  -webkit-animation: project 0.45s linear forwards;
+  animation: project 0.45s linear forwards;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+figure.project:hover figcaption,
+figure.project.hover figcaption {
+  -webkit-transform: scale(1) translate(0, -50%);
+  transform: scale(1) translate(0, -50%);
+  opacity: 1;
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+}
+@-webkit-keyframes project {
+  50% {
+    -webkit-transform: scale(0.8) translateX(0%);
+    transform: scale(0.8) translateX(0%);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(0.8) translateX(-150%);
+    transform: scale(0.8) translateX(-150%);
+    opacity: 0.5;
+  }
+}
+@keyframes project {
+  50% {
+    -webkit-transform: scale(0.8) translateX(0%);
+    transform: scale(0.8) translateX(0%);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(0.8) translateX(-150%);
+    transform: scale(0.8) translateX(-150%);
+    opacity: 0.5;
+  }
+}
+
+
+/*=== Contact ===*/
+#contact {
+    height: 800px;
+}
+
+#contactRow {
+    margin-top: 50px;
+}
+
+.code {
+  font-size: 1.5em;
+}
+
+.btn-block, #submit {
+    font-family: 'Forum', cursive;
+    color: rgb(238, 238, 238);
+    background: rgb(65, 76, 76);
+    margin: 20px 0px 20px 0px;
+}
+
+.btn-block:hover, #submit:hover {
+    color: rgb(0, 0, 0);  
+}
+
+label {
+  font-family: 'Forum', cursive;
+  color: rgb(65, 76, 76);
+  text-align: left !important;
+}
+#name, #email, #human, #submit {
+    border-radius: 5px;
+}
+
+#name_validation, #email_validation, #message_validation, #antiSpam_validation, #afterSubmit {
+    display: none;
+}
+
+.error_message, .success_message {
+  font-family: 'Forum', cursive;
+  color: rgb(170,80,50); 
+}
+
+/*== footer ==*/
+#myFooter {
+    background: rgb(65, 76, 76);
+    width: 100%;
+    margin-right: 0px;
+}
+
+#myFooter p {
+    color: rgb(0, 0, 0);
+    font-family: 'Forum', cursive;
+    margin-top: 5px;
+}
