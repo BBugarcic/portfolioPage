@@ -55,7 +55,7 @@ $("document").ready(function() {
 				data: {
 					name: $("#name").val(),
 					email: $("#email").val(),
-					body: $("#message").val(),
+					body: $("#message").val()
 				},
 				dataType: "json",
 				success: function(response) {

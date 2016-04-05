@@ -189,6 +189,7 @@ p {
    font-size: 1.2em;
    font-family: 'Forum', cursive;
    color: rgb(65, 76, 76);
+   text-align: justify;
 }
 
 .p-upper {
@@ -347,6 +348,7 @@ figure.project.hover figcaption {
 }
 
 .code {
+  text-align: center;
   font-size: 1.5em;
 }
 
