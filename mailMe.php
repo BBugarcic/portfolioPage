@@ -8,7 +8,7 @@
 	$email = $_POST["email"];
 	$message = $_POST["body"];
 	
-	$constants = parse_ini_file("../iniPortfolio/myPortfolio.ini");
+	$constants = parse_ini_file("../../iniPortfolio/myPortfolio.ini");
 	
 	$mail = new PHPMailer;
 	
