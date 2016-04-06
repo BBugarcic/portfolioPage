@@ -13,12 +13,12 @@
 	$mail = new PHPMailer;
 	
 	$mail->isSMTP();                                      // Set mailer to use SMTP
-	$mail->Host = 'smtp.gmail.com';  					// Specify main and backup SMTP servers
+	$mail->Host = 'smtp.gmail.com';  					  // Specify main and backup SMTP servers
 	$mail->SMTPAuth = true;                               // Enable SMTP authentication
-	$mail->Username = $constants['username'];            // SMTP username
+	$mail->Username = $constants['username'];             // SMTP username
 	$mail->Password = $constants['password'];             // SMTP password
 	$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-	$mail->Port = 587;                                    // TCP port to connect to
+	$mail->Port = 25;                                     // TCP port to connect to
 	
 	$mail->setFrom('from@noreply.com');
 	$mail->addAddress($constants['admin'], '2B');     // Add a recipient
@@ -30,7 +30,12 @@
 	file_put_contents('php://stderr', print_r("message : " . $message, TRUE));
 	
 	if(!$mail->send()) {
+		
 		file_put_contents('php://stderr', print_r("kao da nije posalo", TRUE));
+		$data = array("name" => $name);
+		file_put_contents('php://stderr', print_r(json_encode($data), TRUE));
+		echo json_encode($data);
+		
 	} else {
 		file_put_contents('php://stderr', print_r("usao u else", TRUE));
 		
