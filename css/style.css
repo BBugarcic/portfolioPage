@@ -271,6 +271,7 @@ figure.project figcaption {
 figure.project h4,
 figure.project p {
   line-height: 1.5em;
+  text-align: center;
 }
 
 figure.project h4 {
